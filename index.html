@@ -5,92 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macdonald</title>
     <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
-        .navbar-nav {
-            margin-left: 15px;
-            position: relative;
-            top: 98px;
+        .navbar-custom {
+          background-color: #DB0007;
         }
-
-        .item{
-            margin-left: 30%;
+        .navbar-custom .nav-link{
+          font-size: 20px;
+          color: gold;
         }
-
-        .table{
-            margin-top: 10px;
+        .navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
+            color: #ffffff;
+        }
+        .carousel-item{
+          margin-left: 30%;
         }
     </style>
     <style type = "text/css">
-        .description{
+        /* .description{
             font-size: 30pt;
             position: relative;
             right: 80px;
-        }
+        } */
     </style>
 </head>
 <body>
     <!-- 主導覽列 -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">      <!--# 讓整個導覽列佔滿寬度-->
-          <div class = "navbar-header">      
-            <img src = "img/logo.png" width="171" height="147">
-          </div>
-          <ul class="nav navbar-nav">      
-            <li><a href="#">菜單介紹</a></li>
-            <li><a href="#">最新消息</a></li>
-            <li><a href="#">餐廳介紹</a></li>
-            <li><a href="#">聯絡我們</a></li>
-            <li><a href="#">24H歡樂送</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-sm navbar-custom">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="171" height="147"></a>
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">菜單介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">最新消息</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">餐廳介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">聯絡我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">24H歡樂送</a>
+        </li>
+      </ul>
+    
+    </nav>
 
       <!-- 跑馬燈 -->
-      <div id="myCarousel" class="carousel slide">
-        <!-- 輪播（Carousel）指標 -->
-        <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol> 
-        <!-- 輪播（Carousel）專案 -->
+      <div id="banner" class="carousel slide" data-ride="carousel">
+ 
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+          <li data-target="#banner" data-slide-to="0" class="active"></li>
+          <li data-target="#banner" data-slide-to="1"></li>
+          <li data-target="#banner" data-slide-to="2"></li>
+        </ul>
+       
+        <!-- 圖片 -->
         <div class="carousel-inner">
-            <div class="item active">
-                <img src="img/banner1.jpg" alt="banner1">
-            </div>
-            <div class="item">
-                <img src="img/banner2.jpg" alt="banner2">
-            </div>
-            <div class="item">
-                <img src="img/banner3.jpg" alt="banner3">
-            </div>
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg">
+          </div>
         </div>
-        <!-- 輪播（Carousel）導航 -->
-        <a class="carousel-control left" href="#myCarousel" 
-        data-slide="prev">‹</a>
-        <a class="carousel-control right" href="#myCarousel" 
-        data-slide="next">›</a>
-        </div> 
+       
+        <!-- 左右切換按钮 -->
+        <a class="carousel-control-prev" href="#banner" data-slide="prev">
+          <span class="carousel-control-prev-icon"><img src="" alt="按鈕圖片" ></span>
+        </a>
+        <a class="carousel-control-next" href="#banner" data-slide="next">
+          <span class="carousel-control-next-icon"><img src="" alt="按鈕圖片" ></span>
+        </a>
+       
+      </div>
         <!-- 表格 -->
-        <table class="table">
-            <tbody>
-              <tr>
-                <td><img src="img/ad1.jpg"></td>
-                <td class = "description">text</td>
-                <td rowspan="3"><img src="img/24hMeal.png"></td>
-              </tr>
-              <tr>
-                <td><img src="img/ad2.jpg"></td>
-                <td class = "description">text</td>
-              </tr>
-              <tr>
-                <td><img src="img/ad3.jpg"></td>
-                <td class = "description">text</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="d-flex p-2 bg-warning justify-content-center">
+
+          <div class="d-flex  flex-column flex-grow-1">
+
+            <div class="d-flex ">
+              <div class="p-2"><img src="img/ad1.jpg"></div>
+              <div class="p-2">2.1</div>            
+            </div>
+  
+            <div class="d-flex">
+              <div class="p-2"><img src="img/ad2.jpg"></div>            
+              <div class="p-2">2.2</div>            
+            </div>
+  
+            <div class="d-flex ">
+              <div class="p-2"><img src="img/ad3.jpg"></div>
+              <div class="p-2">2.3</div>
+
+            </div>   
+          </div>
+
+          <div class="d-flex ">
+              <div class="p-2"><img src="img/24hMeal.png"></div>
+          </div>
+        </div>
+        
+        <!-- <div class="d-flex p-3 bg-warning justify-content-center">
+
+          <div class="d-flex flex-column">
+            <div class="p-2"><img src="img/ad1.jpg"></div>
+            <div class="p-2"><img src="img/ad2.jpg"></div>
+            <div class="p-2"><img src="img/ad3.jpg"></div>
+          </div>
+
+          <div class="d-flex flex-column flex-fill">
+            <div class="p-2">2.1</div>
+            <div class="p-2">2.2</div>
+            <div class="p-2">2.3</div>
+          </div>
+
+          <div class="d-flex flex-column">
+            <div class="p-2"><img src="img/24hMeal.png"></div>
+          </div>
+
+        </div> -->
+        
 </body>
 </html>
