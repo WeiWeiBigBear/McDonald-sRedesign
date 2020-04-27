@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macdonald</title>
+    <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-nav {
+            margin-left: 15px;
+            position: relative;
+            top: 98px;
+        }
+
+        .item{
+            margin-left: 30%;
+        }
+
+        .table{
+            margin-top: 10px;
+        }
+    </style>
+    <style type = "text/css">
+        .description{
+            font-size: 30pt;
+            position: relative;
+            right: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主導覽列 -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">      <!--# 讓整個導覽列佔滿寬度-->
+          <div class = "navbar-header">      
+            <img src = "img/logo.png" width="171" height="147">
+          </div>
+          <ul class="nav navbar-nav">      
+            <li><a href="#">菜單介紹</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">餐廳介紹</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">24H歡樂送</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- 跑馬燈 -->
+      <div id="myCarousel" class="carousel slide">
+        <!-- 輪播（Carousel）指標 -->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol> 
+        <!-- 輪播（Carousel）專案 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/banner1.jpg" alt="banner1">
+            </div>
+            <div class="item">
+                <img src="img/banner2.jpg" alt="banner2">
+            </div>
+            <div class="item">
+                <img src="img/banner3.jpg" alt="banner3">
+            </div>
+        </div>
+        <!-- 輪播（Carousel）導航 -->
+        <a class="carousel-control left" href="#myCarousel" 
+        data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next">›</a>
+        </div> 
+        <!-- 表格 -->
+        <table class="table">
+            <tbody>
+              <tr>
+                <td><img src="img/ad1.jpg"></td>
+                <td class = "description">text</td>
+                <td rowspan="3"><img src="img/24hMeal.png"></td>
+              </tr>
+              <tr>
+                <td><img src="img/ad2.jpg"></td>
+                <td class = "description">text</td>
+              </tr>
+              <tr>
+                <td><img src="img/ad3.jpg"></td>
+                <td class = "description">text</td>
+              </tr>
+            </tbody>
+          </table>
+</body>
+</html>
