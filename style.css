@@ -6,6 +6,7 @@ body{
   font-family: "Oswald" ;
 }
 .navbar-custom {
+  /* background-color: #DB0007; */
   background-color: #DB0007;
 }
 .navbar-custom .nav-link{
@@ -16,8 +17,26 @@ body{
   color: #ffffff;
 }
 .carousel-item{
-  margin-left: 170px;
+  margin-left: 11%;
+  
 }
 #banner{
   margin: 20px 0px;
 }
+
+#main-navbar{
+  font-weight: bold;
+}
+
+#bodyList{
+  margin: 0px 100px;
+}
+
+#List img{
+  width: 342px;
+  height: 210px;
+}
+
+/* #longAD{
+  margin-right: 100px;
+} */
