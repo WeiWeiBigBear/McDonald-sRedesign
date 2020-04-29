@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald/Oswald-VariableFont_wght.ttf') format("truetype");     
+}
+
+@font-face {
+  font-family: 'DFT';
+  src: url('../font/DFT/DFT_R8.ttc') format("truetype");     
+}
+
+@font-face {
+  font-family: 'Noto';
+  src: url('../font/Noto/NotoSerifCJKtc-Regular.otf') format("opentype");     
+}
+
+body{
+  font-family: "DFT" ;
+  margin: 0px 10%;
+
+}
+.navbar-custom {
+  /* background-color: #DB0007; */
+  background-color: #DB0007;
+}
+.navbar-custom .nav-link{
+  font-size: 20px;
+  color: gold;
+}
+.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
+}
+
+
+#main-navbar{
+  font-weight: bold;
+}
+
+#banner{
+  margin: 20px 0px;
+}
+
+#banner img{
+  width: 100%;
+  height: 46%;
+}
+
+#List img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.topic{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+
+}
+.content{
+  line-height: 150%;
+  position: relative;
+  left: 5%;
+}
+
+
+
