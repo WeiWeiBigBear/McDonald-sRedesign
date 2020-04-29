@@ -4,6 +4,8 @@
 }
 body{
   font-family: "Oswald" ;
+  margin: 0px 16.7%;
+
 }
 .navbar-custom {
   /* background-color: #DB0007; */
@@ -17,26 +19,23 @@ body{
   color: #ffffff;
 }
 .carousel-item{
-  margin-left: 11%;
-  
-}
-#banner{
-  margin: 20px 0px;
+  margin-left: 12.7%;  
 }
 
 #main-navbar{
   font-weight: bold;
 }
 
-#bodyList{
-  margin: 0px 100px;
+#banner{
+  margin: 20px 0px;
+}
+
+#banner img{
+  width: 75%;
+  height: 46%;
 }
 
 #List img{
   width: 342px;
   height: 210px;
 }
-
-/* #longAD{
-  margin-right: 100px;
-} */
