@@ -29,6 +29,14 @@
   .navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
     color: #ffffff;
   }
+  .linkLogo{
+    margin-top: 140px;
+    margin-left: 270px;
+  }
+  
+  .linkLogo img{
+    margin: auto 5px;
+  }
   .carousel-item{
     margin-left: 12.7%;  
   }

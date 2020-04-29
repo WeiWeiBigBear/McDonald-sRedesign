@@ -28,6 +28,14 @@ body{
 .navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
   color: #ffffff;
 }
+.linkLogo{
+  margin-top: 140px;
+  margin-left: 270px;
+}
+
+.linkLogo img{
+  margin: auto 5px;
+}
 .carousel-item{
   margin-left: 12.7%;  
 }
@@ -46,8 +54,9 @@ body{
 }
 
 #List img{
-  width: 342px;
-  height: 210px;
+  width: 500px;
+  height: 300px;
+  margin: 0px 20px;
 }
 
 .chap{
@@ -60,6 +69,7 @@ body{
 }
 .content{
   line-height: 40px;
+  margin-top: 10px;
 }
 .award{
   margin-top: 10px;
