@@ -1,63 +1,25 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url('../font/Oswald/Oswald-VariableFont_wght.ttf') format("truetype");     
-  }
+.carousel-item{
+  margin-left: 12.7%;  
+}
   
-  @font-face {
-    font-family: 'DFT';
-    src: url('../font/DFT/DFT_R8.ttc') format("truetype");     
-  }
+#main-navbar{
+  font-weight: bold;
+}
   
-  @font-face {
-    font-family: 'Noto';
-    src: url('../font/Noto/NotoSerifCJKtc-Regular.otf') format("opentype");     
-  }
-  
-  body{
-    font-family: "DFT" ;
-    margin: 0px 10%;
-  
-  }
-  .navbar-custom {
-    /* background-color: #DB0007; */
-    background-color: #DB0007;
-  }
-  .navbar-custom .nav-link{
-    font-size: 20px;
-    color: gold;
-  }
-  .navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
-  }
-  .linkLogo{
-    margin-top: 140px;
-    margin-left: 270px;
-  }
-  
-  .linkLogo img{
-    margin: auto 5px;
-  }
-  .carousel-item{
-    margin-left: 12.7%;  
-  }
-  
-  #main-navbar{
-    font-weight: bold;
-  }
-  
- .tag{
-     font-size: 20px;
-     margin-left: 30%;
- }
- .topic{
-    font-size: 50px;
-     margin: auto auto;
- }
+.tag{
+  font-size: 20px;
+  margin-left: 30%;
+}
 
- .plus{
-    position: relative;
-    top: 150px;
- }
+.topic{
+  font-size: 50px;
+  margin: auto auto;
+}
+
+.plus{
+  position: relative;
+  top: 150px;
+}
   
   
   

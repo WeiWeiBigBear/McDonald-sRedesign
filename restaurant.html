@@ -1,125 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zh-TW">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>餐廳介紹</title>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- 手機版縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Macdonald</title>
+      
+    <!-- css連結 -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_restaurant.css" rel="stylesheet">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    
-    <!-- css -->
-    <link href="./css/style_restaurant.css" type="text/css" rel="stylesheet">
-</head>
+  </head>
 <body>
     <!-- 主導覽列 -->
-    <nav id = "main-navbar" class="navbar navbar-expand-sm navbar-custom">
-      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" width="80%" height="80%"></a>
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./food.html">菜單介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">最新消息</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="restaurant.html">餐廳介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">24H歡樂送</a>
-        </li>
-      </ul> 
-      <div class = "linkLogo">
-        <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
-        <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
-        <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
-      </div>   
+    <nav class="navbar navbar-expand-md navbar-light bg-red fixed-top">
+      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link navbar-text" href="./food.html">菜單介紹</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">最新消息</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="./restaurant.html">餐廳介紹</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">聯絡我們</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">24H歡樂送</a></li>
+        </ul>
+
+        <div class = "linkLogo">
+          <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
+          <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
+          <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
+        </div> 
+      </div>
     </nav>
 
-    <div id = "List" class="d-flex p-2 background flex-column flex-grow-1">
-
-      <div class="d-flex p-2 ">
-        <div class = "chap">
-          <div class = "topic">品牌故事</div>
-          <div class = "content">
+    <div class="restaurant_describe navbar-expand-md">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality1" aria-controls="quality1" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/re1.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality1">
+          <div class="col-md-6 story">
+            <span>品牌故事</span>
+            <br>
+            <p>
             麥當勞是全世界最大的快速餐飲服務餐廳領導品牌。1955年，世界第一家麥當勞由創始人Ray A. Kroc
             在美國芝加哥Elk Grove Village成立，金黃拱門下的美味漢堡和親切服務，立刻受到各界人士的歡迎
-            現在，全球有超過36,000家餐廳，遍及超過100個國家地區，為顧客提供超值美味的麥當勞餐飲。                
+            現在，全球有超過36,000家餐廳，遍及超過100個國家地區，為顧客提供超值美味的麥當勞餐飲。
             麥當勞以品質、服務、衛生與超值（Quality、Service、Cleanliness、Value）等核心價值廣獲消費者的支持
             ，並長期深耕台灣。1984年1月28日，麥當勞在台灣成立第一家餐廳，近年來，台灣麥當勞持續創新服務，推出快
             速便利的「得來速」、「24小時營業」餐廳、新型態「McCafé」與「為你現做」等服務。2010年起，導入麥當勞亞
-            太區全新設計風格，不只滿足顧客的味蕾，也將服務提升至感官美學享受，提供顧客美學風格、美感服務、美味多元的美學饗宴。                
-          </div>          
-        </div>
-        <div class="p-2" style="margin-top: 80px;">
+            太區全新設計風格，不只滿足顧客的味蕾，也將服務提升至感官美學享受，提供顧客美學風格、美感服務、美味多元的美學饗宴。
+            </p>
+          </div>
+          <div class="col-md-6 text-right quality--image--display_none">
             <img src="img/re1.jpg">
-        </div>
-      </div>       
-      
-      <div class="d-flex p-2 ">
-        <div class="p-2">
-          <img src="img/re2.jpg">
-        </div>
-        <div class = "chap">
-          <div class = "topic">品牌願景: 打造更好的麥當勞</div>
-          <div class = "content">
-            我們重視員工、加盟經營者與供應商的合作夥伴關係，賦予信任與授權，展現合作的力量，發揮多元特性、兼容個人及團體的差異性，創造統合綜效、互補共贏的優質團隊。我們對台灣這片土地承諾的企業責任從無間斷。從人才培育、食品安全、 在地關懷與環境保護等領域一直不懈貢獻投入，引進全球最完整的制度與高標準，務求是和本地在地共享。
-            唯有全員一心、努力不懈，打造「更好的麥當勞」。                 
-          </div>  
-        </div>
-        
-      </div>
-
-      <div class="d-flex p-2 mt-5">
-        <div class = "chap">
-          <div class = "topic">品牌承諾:「片刻時光、別具滋味」提升顧客服務體驗</div>
-          <div class = "content">
-            我們感謝每一次的顧客造訪、珍惜每一次寶貴機會，我們持續導入相關專案與人員學習，希望讓顧客體驗到麥當勞所提供的方便性、美食饗宴與慇勤款待，打從心裡感受「片刻時光、別具滋味」。
           </div>
         </div>
-        <div class="p-2">
-            <img src="img/re3.jpg">
-        </div>
-      </div> 
-      
-      
-      
-                                
-      <div class = "chap mt-5">
-        <div class = "topic">榮耀獎項</div>
-        <div class = "award">
-          <p>．財星雜誌(Fortune)最佳餐飲服務業排名第1名</p>
-          <p>．財星雜誌(Fortune)企業資產利用排名第1名</p>
-          <p>．美國巴倫周刊(Barron's) 最受尊敬企業第3名</p>
-          <p>．BrandZ全球最有價值品牌第4名</p>
-          <p>．富比世雜誌(Forbes)全球最有影響力品牌第7名</p>
-          <p>．Cheers雜誌「新世代最嚮往100大企業」</p>
-        </div>
-      </div>         
-    </div>
-  
+      </div>
+      <hr class="title_line">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality2" aria-controls="quality2" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/re2.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality2">
 
-        
-</body>
-<footer class="page-footer font-small blue">
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">
-    © 2020 Copyright: McDonald's. All Rights Reserved.    
-  </div>
-  <!-- Copyright -->
-</footer>
+          <div class="col-md-6 quality--image--display_none">
+            <img src="img/re2.jpg">
+          </div>
+
+          <div class="col-md-6 story">
+            <span>品牌願景: 打造更好的麥當勞</span>
+            <br>
+            <p>我們重視員工、加盟經營者與供應商的合作夥伴關係，賦予信任與授權，展現合作的力量，發揮多元特性、兼容個人及團體的差異性，創造統合綜效、互補共贏的優質團隊。我們對台灣這片土地承諾的企業責任從無間斷。從人才培育、食品安全、 在地關懷與環境保護等領域一直不懈貢獻投入，引進全球最完整的制度與高標準，務求是和本地在地共享。
+               唯有全員一心、努力不懈，打造「更好的麥當勞」。
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="title_line">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality3" aria-controls="quality3" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/re3.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality3">
+          <div class="col-md-6 story">
+            <span>品牌承諾:「片刻時光、別具滋味」提升顧客服務體驗</span>
+            <br>
+            <p>
+              我們感謝每一次的顧客造訪、珍惜每一次寶貴機會，我們持續導入相關專案與人員學習，希望讓顧客體驗到麥當勞所提供的方便性、美食饗宴與慇勤款待，打從心裡感受「片刻時光、別具滋味」。
+            </p>
+          </div>
+          <div class="col-md-6 text-right quality--image--display_none">
+            <img src="img/re3.jpg">
+          </div>
+        </div>
+      </div>
+      <hr class="title_line">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality3" aria-controls="quality3" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/re5.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality3">
+          <div class="col-md-6 quality--image--display_none">
+            <img src="img/re5.jpg">
+          </div>
+          <div class="col-md-6 story">
+            <span>榮耀獎項</span>
+            <br>
+            <ul>
+              <li>財星雜誌(Fortune)最佳餐飲服務業排名第1名</li>
+              <li>財星雜誌(Fortune)企業資產利用排名第1名</li>
+              <li>美國巴倫周刊(Barron's) 最受尊敬企業第3名</li>
+              <li>BrandZ全球最有價值品牌第4名</li>
+              <li>富比世雜誌(Forbes)全球最有影響力品牌第7名</li>
+              <li>Cheers雜誌「新世代最嚮往100大企業」</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright: McDonald's. All Rights Reserved.    
+    </div>
+  </footer>
+
+  <!-- JS連結 -->
+  <script src="js/jQuery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 </html>

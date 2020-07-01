@@ -13,63 +13,131 @@
   src: url('../font/Noto/NotoSerifCJKtc-Regular.otf') format("opentype");     
 }
 
+html{
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 body{
   font-family: "DFT" ;
-  margin: 0px 10%;
-
 }
-.navbar-custom {
-  /* background-color: #DB0007; */
+
+@media (min-width: 768px) {
+  /*nav選單*/
+	.navbar{
+	  padding-left:50px!important;
+	  padding-right:50px!important; 
+  }
+}
+
+.bg-red {
   background-color: #DB0007;
 }
-.navbar-custom .nav-link{
-  font-size: 20px;
-  color: gold;
-}
-.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
-  color: #ffffff;
-}
-.linkLogo{
-  margin-top: 140px;
-  margin-left: 270px;
+
+.bg-red .navbar-text {
+  font-size: 16px;
+  color: gold!important;
 }
 
-.linkLogo img{
-  margin: auto 5px;
+.bg-red .nav-item.active .nav-link,
+.bg-red .nav-item:hover .nav-link {
+    color: #ffffff;
 }
 
-
-#main-navbar{
-  font-weight: bold;
+.linkLogo img {
+  height: 16%;
+  width: 16%;
+  margin-right: 15px;
+  border-radius: 50%;
 }
 
-#banner{
-  margin: 20px 0px;
+@media (min-width:768px) and (max-width:992px) {
+  .bg-red .navbar-text {
+    font-size: 13px!important;
+    color: gold!important;
+  }
+}
+@media (max-width:767px) {
+  .linkLogo img {
+    height: 8%!important;
+    width: 8%!important;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
 }
 
-#banner img{
-  width: 100%;
-  height: 46%;
+.banner{
+  margin-top: 105px;
+  margin-bottom: 20px;
 }
 
-#List img{
-  width: 100%;
-  height: 100%;
+.banner .container-fluid {
+	padding:0!important;
 }
 
-
-
-.topic{
-  font-size: 20px;
-  font-weight: bold;
-  text-align:center;
-
-}
-.content{
-  line-height: 150%;
-  position: relative;
-  left: 5%;
+.quality {
+  padding: 35px;
+  background: gold;
 }
 
+.quality img {
+  box-shadow:2px 2px 4px gray;
+  height: 80%;
+  width: 80%;
+}
 
+.story {
+	font-size: 16px;
+}
 
+.story span {
+	font-style: italic;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title_line {
+  border-color:#DB0007;
+  border-width: 5px;
+  border-radius: 100px;
+}
+
+@media (max-width:992px) {
+  .quality img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .story {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  
+  .story span {
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:767px) {
+  .quality--image--display_none {
+    display: none;
+  }
+}
+
+footer {
+  font-size: 12px;
+}

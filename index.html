@@ -1,152 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zh-TW">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 手機版縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Macdonald</title>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      
+    <!-- css連結 -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css"> -->
-    
-    <!-- css -->
-    <link href="./css/style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  
+  <body>
     <!-- 主導覽列 -->
-    <nav id = "main-navbar" class="navbar navbar-expand-sm navbar-custom">
-      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" width="80%" height="80%"></a>
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./food.html">菜單介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">最新消息</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./restaurant.html">餐廳介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">24H歡樂送</a>
-        </li>
-      </ul>  
-      <div class = "linkLogo">
-        <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
-        <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
-        <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
-      </div> 
+    <nav class="navbar navbar-expand-md navbar-light bg-red fixed-top">
+      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link navbar-text" href="./food.html">菜單介紹</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">最新消息</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="./restaurant.html">餐廳介紹</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">聯絡我們</a></li>
+          <li class="nav-item"><a class="nav-link navbar-text" href="#">24H歡樂送</a></li>
+        </ul>
+
+        <div class = "linkLogo">
+          <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
+          <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
+          <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
+        </div> 
+      </div>
     </nav>
 
-      <!-- 跑馬燈 -->
+    <div class="banner">
       <div id="banner" class="carousel slide" data-ride="carousel">
- 
-        <!-- 指示符 -->
-        <ul class="carousel-indicators">
+        <ol class="carousel-indicators">
           <li data-target="#banner" data-slide-to="0" class="active"></li>
           <li data-target="#banner" data-slide-to="1"></li>
           <li data-target="#banner" data-slide-to="2"></li>
-        </ul>
-       
-        <!-- 圖片 -->
+        </ol>
+        <!-- 輪播內容 -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/banner1.jpg">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/banner2.jpg">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/banner3.jpg">
+            <img src="img/banner3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-       
-        <!-- 左右切換按钮 -->
-        <a class="carousel-control-prev" href="#banner" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <!-- 左右箭頭 -->
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#banner" data-slide="next">
-          <span class="carousel-control-next-icon "></span>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
         </a>
-       
       </div>
+    </div>
 
-
-        <!-- 表格 -->
-        <div id = "bodyList" class="d-flex p-2 bg-warning justify-content-center">
-
-          <div id = "List" class="d-flex ">
-  
-            <div class="d-flex p-2 flex-column">
-              <div class="p-2"><img src="img/ad2.jpg"></div>            
-              <div class = "p-2">
-                <p class = "topic">有認證有真相，安心無誤</p>
-                <p class="content">
-                  每一口都有最嚴格的把關認證與最細微的用心！<br/>
-                  我們明白你對食品安全格外關注。除了嚴選供應<br/>
-                  商，並提升食品檢查程序外，我們更委託獨立檢<br/>
-                  測認證機構，每年每季定時為嚴選食材進行獨立<br/>
-                  驗測，不僅一百四十多種食材進行近三萬五千項<br/>
-                  檢驗，餐廳方面每年進行超過兩萬項檢驗，為顧<br/>
-                  客提供雙重把關，提高安全標準。
-                </p>
-              </div>             
-            </div>
-  
-            <div class="d-flex p-2 flex-column">
-              <div class="p-2"><img src="img/ad4.jpg"></div>            
-              <div class = "p-2">
-                <p class = "topic">你關心的事就是重要的事</p>
-                <div class="article">
-                  <p>為什麼麥當勞薯條就是特別好吃？<a href="#"> More</a></p>
-                  <p>麥當勞柳橙汁真的是100%果汁嗎?<a href="#"> More</a></p>
-                  <p>麥當勞的牛肉來源是哪裡?<a href="#"> More</a></p>
-                </div>
-                
-              </div>             
-            </div>
-  
-            <div class="d-flex p-2 flex-column">
-              <div class="p-2"><img src="img/ad5.jpg"></div>            
-              <div class = "p-2">
-                <p class = "topic">安心就是看見看不見的流程</p>
-                <p class="content">
-                  看見美味擺上你的餐盤前，透明化的嚴格把關流程<br/>
-                  ！步步安心！為了確保顧客吃得美味又安心，從食<br/>
-                  材處理至餐廳環境的清潔衞生，從大事項到小細節<br/>
-                  ，我們都嚴謹把關，貫徹麥當勞保障顧客與員工健<br/>
-                  康及安全的承諾。
-                </p>
-              </div>             
-            </div>
-  
-  
+    <div class="quality navbar-expand-md">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality1" aria-controls="quality1" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/ad2.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality1">
+          <div class="col-md-6 quality--image--display_none">
+            <img src="img/ad2.jpg">
           </div>
-  
+          <div class="col-md-6 story">
+            <span>有認證有真相，安心無誤</span>
+            <br>
+            <p>
+              每一口都有最嚴格的把關認證與最細微的用心！
+              我們明白你對食品安全格外關注。除了嚴選供應
+              商，並提升食品檢查程序外，我們更委託獨立檢
+              測認證機構，每年每季定時為嚴選食材進行獨立
+              驗測，不僅一百四十多種食材進行近三萬五千項
+              檢驗，餐廳方面每年進行超過兩萬項檢驗，為顧
+              客提供雙重把關，提高安全標準。
+            </p>
+          </div>
         </div>
-      
-     
-        
-</body>
-<footer class="page-footer font-small blue">
+      </div>
+      <hr class="title_line">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality2" aria-controls="quality2" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/ad4.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality2">
+          <div class="col-md-6 story">
+            <span>你關心的事就是重要的事</span>
+            <br>
+            <p>為什麼麥當勞薯條就是特別好吃？<a href="#"> More</a></p>
+            <p>麥當勞柳橙汁真的是100%果汁嗎?<a href="#"> More</a></p>
+            <p>麥當勞的牛肉來源是哪裡?<a href="#"> More</a></p>
+          </div>
+          <div class="col-md-6 text-right quality--image--display_none">
+            <img src="img/ad4.jpg">
+          </div>
+        </div>
+      </div>
+      <hr class="title_line">
+      <div class="container section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#quality3" aria-controls="quality3" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/ad5.jpg">
+        </button>
+        <div class="row align-items-center collapse navbar-collapse" id="quality3">
+          <div class="col-md-6 quality--image--display_none">
+            <img src="img/ad5.jpg">
+          </div>
+          <div class="col-md-6 story">
+            <span>安心就是看見看不見的流程</span>
+            <br>
+            <p>
+              看見美味擺上你的餐盤前，透明化的嚴格把關流程
+              ！步步安心！為了確保顧客吃得美味又安心，從食
+              材處理至餐廳環境的清潔衞生，從大事項到小細節
+              ，我們都嚴謹把關，貫徹麥當勞保障顧客與員工健
+              康及安全的承諾。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">
-    © 2020 Copyright: McDonald's. All Rights Reserved.    
-  </div>
-  <!-- Copyright -->
+  </body>
+  <footer>
+    <!-- Copyright -->
+    <div class="text-center py-3">
+      © 2020 Copyright: McDonald's. All Rights Reserved.
+    </div>
+  </footer>
 
-</footer>
+  <!-- JS連結 -->
+	<script src="js/jQuery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="js/script_index.js"></script>
 </html>

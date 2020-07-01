@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zh-TW">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>菜單介紹</title>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- 手機版縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Macdonald</title>
+      
+    <!-- css連結 -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style_food.css" rel="stylesheet">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css"> -->
-    
-    <!-- css -->
-    <link href="./css/style_food.css" type="text/css" rel="stylesheet">
-</head>
+  </head>
 <body>
     <!-- 主導覽列 -->
-    <nav id = "main-navbar" class="navbar navbar-expand-sm navbar-custom">
-      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" width="80%" height="80%"></a>
-
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./food.html">菜單介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">最新消息</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./restaurant.html">餐廳介紹</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">24H歡樂送</a>
-        </li>
-      </ul> 
-      <div class = "linkLogo">
-        <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
-        <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
-        <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
-      </div>   
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-red fixed-top">
+        <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link navbar-text" href="./food.html">菜單介紹</a></li>
+            <li class="nav-item"><a class="nav-link navbar-text" href="#">最新消息</a></li>
+            <li class="nav-item"><a class="nav-link navbar-text" href="./restaurant.html">餐廳介紹</a></li>
+            <li class="nav-item"><a class="nav-link navbar-text" href="#">聯絡我們</a></li>
+            <li class="nav-item"><a class="nav-link navbar-text" href="#">24H歡樂送</a></li>
+          </ul>
+  
+          <div class = "linkLogo">
+            <a href="https://www.facebook.com/mcdonalds.tw"><img src="./img/fb.png"></a>
+            <a href="https://www.instagram.com/mcdonaldstw/"><img src="./img/IG.png"></a>
+            <a href="https://www.youtube.com/channel/UChkGH0QNU9w56CEotkNjpiA"><img src="./img/youtube.png"></a>
+          </div> 
+        </div>
+      </nav>
 
     <table class="table mt-2">
         <tr>
@@ -142,13 +129,15 @@
      
         
 </body>
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">
-    © 2020 Copyright: McDonald's. All Rights Reserved.    
-  </div>
-  <!-- Copyright -->
-
-</footer>
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright: McDonald's. All Rights Reserved.    
+        </div>
+    </footer>
+    <!-- JS連結 -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </html>
