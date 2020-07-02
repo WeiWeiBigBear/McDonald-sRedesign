@@ -1,6 +1,7 @@
 .restaurant_describe {
   margin-top: 105px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-image: url("../img/background2.png");
 }
 
@@ -13,4 +14,28 @@
   border-color:#DCDCDC;
 }
 
+@media (max-width:992px) {
+  .restaurant_describe img {
+    width: 400px;
+  height: 240px;
+  }
 
+  .story {
+    font-size: 14px;
+  }
+  
+  .story span {
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:768px) {
+  .restaurant_describe img {
+    width: 500px;
+    height: 300px;
+  }
+}
