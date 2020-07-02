@@ -44,7 +44,7 @@ body{
 
 .bg-red .nav-item.active .nav-link,
 .bg-red .nav-item:hover .nav-link {
-    color: #ffffff;
+  color: #ffffff!important;
 }
 
 .linkLogo img {
@@ -153,4 +153,9 @@ footer {
 .linkLogo img:hover {
   border-radius: 50%;
   border:2px gold solid;
+}
+
+.navbar-brand:hover {
+  border:2px gold solid;
+  border-radius: 10%;
 }
